@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Anh có yêu em không</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f8ff;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #333;
+    }
+
+    .btn {
+      font-size: 24px;
+      padding: 12px 30px;
+      margin: 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn-love {
+      background-color: #ff69b4;
+      color: white;
+    }
+
+    .btn-hate {
+      background-color: #ff4d4d;
+      color: white;
+    }
+
+    .btn:hover {
+      opacity: 0.8;
+    }
+
+    #result {
+      margin-top: 40px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Anh có yêu em không??</h1>
+
+  <button class="btn btn-love" onclick="chonYeu()">💖 Yêu</button>
+  <button class="btn btn-hate" onclick="chonGhet()">💔 Ghét</button>
+
+  <div id="result"></div>
+
+  <script>
+    function chonYeu() {
+      document.getElementById("result").innerText = "Bạn đã chọn GHÉT!😤 ";
+    }
+
+    function chonGhet() {
+      document.getElementById("result").innerText = "Bạn đã chọn GHÉT! 😤";
+    }
+  </script>
+
+</body>
+</html>
